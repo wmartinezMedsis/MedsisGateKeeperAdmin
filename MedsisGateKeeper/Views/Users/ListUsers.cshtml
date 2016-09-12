@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListUsers</title>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>    
+
+    <script src="~/Scripts/ui-grid.min.js"></script>
+    <link href="~/styles/ui-grid.min.css" rel="stylesheet" />
+    
+    <script src="~/Scripts/Controllers/UserController.js"></script>
+</head>
+
+@{ string dir = String.Concat('"', Url.Action("ListUsers"), '"'); }    
+                                      
+<body data-ng-app="GateKpr" ng-controller="GateKprCtrlListUsers" ng-init="initPage('\\Account\\getListUsers')">
+    <div class="form-horizontal">
+        <h4>Users Management</h4>
+        <hr />
+        <div>            
+            <div style="width:100%; height:100%" ui-grid="gridLstUsersOptions">
+
+            </div>
+            <div><button type="button" onclick="location.href='@Url.Action("CreateUser")'">Create user</button></div>
+        </div>
+
+    </div>
+</body>
+</html>

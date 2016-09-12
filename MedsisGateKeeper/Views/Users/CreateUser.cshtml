@@ -1,0 +1,60 @@
+﻿@model Model.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateUser</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="~/Scripts/ui-grid.min.js"></script>
+    <link href="~/styles/ui-grid.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/Controllers/UserController.js"></script>
+        
+</head>
+
+<body ng-app="GateKpr" ng-controller="GateKprCtrlUserController">
+    <form name="crtUserForm">
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>User</h4>
+            <hr />
+            <div class="alert {{alertType}}" role="alert" ng-show="alertType != ''"><b>{{alertTypeText}}</b>{{alertMessage}}</div>
+
+            <div style="float:left;">Name</div>
+            <div>@Html.TextBoxFor(m => m.name, new { @class = "form-control", ng_model = "User.name", required = "required" })</div><span ng-show="crtUserForm.Name.$touched && crtUserForm.Name.$invalid">The name is required.</span>
+
+            <div style="float:left;">User name</div>
+            <div>@Html.TextBoxFor(m => m.userName, new { @class = "form-control", ng_model = "User.userName", required = "required",  ng_pattern = "noSpaceEx" })</div><span ng-show="crtUserForm.UserName.$touched && crtUserForm.UserName.$invalid">Invalid Username.</span>
+
+            <div style="float:left;">Password</div>
+            <div>@Html.TextBoxFor(m => m.password, new { @class = "form-control", Type="password", ng_model = "User.password", required = "required" })</div><span ng-show="crtUserForm.Password.$touched && crtUserForm.Password.$invalid">Required.</span>
+
+            
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    
+                    @{ string dir = String.Concat( '"' , Url.Action("CreateUser") , '"'); }                    
+                    <button id="btnCreate" ng-disabled="!crtUserForm.$valid" ng-click="btnCreateClick(@dir)">Create user</button>
+                    <button type="button" onclick="location.href='@Url.Action("ListUsers")'">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

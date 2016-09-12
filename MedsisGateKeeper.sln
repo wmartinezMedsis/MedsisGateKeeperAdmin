@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedsisGateKeeper", "MedsisGateKeeper\MedsisGateKeeper.csproj", "{1D075E69-E9BA-4F4E-B2C1-B9A4CA878623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{6C8FE485-0F15-4CE8-8762-5828C21AFF18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{616C378F-5A67-498E-BECF-D7776FEFD0CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D075E69-E9BA-4F4E-B2C1-B9A4CA878623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D075E69-E9BA-4F4E-B2C1-B9A4CA878623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D075E69-E9BA-4F4E-B2C1-B9A4CA878623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D075E69-E9BA-4F4E-B2C1-B9A4CA878623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8FE485-0F15-4CE8-8762-5828C21AFF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8FE485-0F15-4CE8-8762-5828C21AFF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8FE485-0F15-4CE8-8762-5828C21AFF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8FE485-0F15-4CE8-8762-5828C21AFF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616C378F-5A67-498E-BECF-D7776FEFD0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616C378F-5A67-498E-BECF-D7776FEFD0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616C378F-5A67-498E-BECF-D7776FEFD0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616C378F-5A67-498E-BECF-D7776FEFD0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

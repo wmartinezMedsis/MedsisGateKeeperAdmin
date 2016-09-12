@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body data-ng-app="GateKpr" data-ng-controller="GateKprCtrlListUsers" ng-init="initPage('\\Account\\getListUsers')">
+    <div class="form-horizontal">
+        <h4>Users Management</h4>
+        <hr />
+        <div ng-controller="GateKprCtrlListUsers" ng-init="initPage('\\Account\\User\\Get')">
+            <div style="width:100%; height:100%" ui-grid="gridLstUsersOptions">
+
+            </div>
+            <div><button type="button">Create user</button></div>
+        </div>
+
+    </div>
+</body>
+</html>

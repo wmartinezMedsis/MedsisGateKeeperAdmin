@@ -1,0 +1,13 @@
+C:\Wilmer\Proyects\Gatekeeper\GateKeeper\Model\bin\Debug\Model.dll
+C:\Wilmer\Proyects\Gatekeeper\GateKeeper\Model\bin\Debug\Model.pdb
+C:\Wilmer\Proyects\Gatekeeper\GateKeeper\Model\obj\Debug\Model.dll
+C:\Wilmer\Proyects\Gatekeeper\GateKeeper\Model\obj\Debug\Model.pdb
+C:\Wilmer\Proyects\Gatekeeper\GateKeeper\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Wilmer\Proyects\GatekeeperRazor\GateKeeper\Model\bin\Debug\Model.dll
+C:\Wilmer\Proyects\GatekeeperRazor\GateKeeper\Model\bin\Debug\Model.pdb
+C:\Wilmer\Proyects\GatekeeperRazor\GateKeeper\Model\obj\Debug\Model.dll
+C:\Wilmer\Proyects\GatekeeperRazor\GateKeeper\Model\obj\Debug\Model.pdb
+C:\Wilmer\Proyects\MedsisGateKeeper\Model\bin\Debug\Model.dll
+C:\Wilmer\Proyects\MedsisGateKeeper\Model\bin\Debug\Model.pdb
+C:\Wilmer\Proyects\MedsisGateKeeper\Model\obj\Debug\Model.dll
+C:\Wilmer\Proyects\MedsisGateKeeper\Model\obj\Debug\Model.pdb
